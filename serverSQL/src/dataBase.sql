@@ -23,5 +23,5 @@ CREATE TABLE accounts (
     criado TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
-
+ALTER TABLE accounts ALTER COLUMN valor TYPE DOUBLE PRECISION USING valor::DOUBLE PRECISION; -- Alterando table
 SELECT * FROM accounts --view rows
